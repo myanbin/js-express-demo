@@ -31,6 +31,10 @@ app.post('/users/:id', function (req, res) {
   res.send(id + '...' + name);
 });
 
+app.get('/search', function (req, res) {
+  res.redirect('https://www.baidu.com/');
+});
+
 app.get('/download', function (req, res) {
   res.download('./api.http', 'api.txt');
 });
