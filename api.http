@@ -1,0 +1,26 @@
+
+GET http://localhost:3200/about
+
+###
+
+POST http://localhost:3200/zoos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "bjzoo"
+}
+
+###
+
+POST http://localhost:3200/users/1
+Content-Type: application/json
+
+{
+  "name": "john"
+}
+
+###
+
+GET http://localhost:3200/photo
+
